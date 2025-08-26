@@ -1,0 +1,22 @@
+@use './header.scss';
+@use './footer.scss';
+@use './hero.scss';
+@use './cardSection.scss';
+@use './card.scss';
+@use './tag.scss';
+@use './stars.scss';
+
+*{
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Inter", sans-serif;
+    color : black
+}
+
+header, footer>div, #hero>div{
+    max-width: 1440px;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
