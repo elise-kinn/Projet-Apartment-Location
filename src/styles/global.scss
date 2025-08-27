@@ -8,28 +8,36 @@
 @use './articleInfo.scss';
 @use './logementInfo.scss';
 @use './collapse.scss';
+@use './carousel.scss';
+@use './equipement.scss';
+@use './notFound.scss';
 
 *{
     margin: 0;
     text-decoration: none;
     list-style: none;
     font-family: "Inter", sans-serif;
+    transition : all 0.2s ease
 }
 
 a{
     color : black
 }
 
-header, footer>div, #hero>div{
-    max-width: 1440px;
+header, footer>div, #hero>div, #info, #carousel, #host, .collapse{
     margin: auto;
     padding-left: 15px;
     padding-right: 15px;
 }
 
+header, footer>div, #hero>div{
+    max-width: 1440px;
+}
+
 #info, #carousel, #host, .collapse{
     max-width: 900px;
-    margin: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+}
+
+#carousel{
+    max-width: 1000px;
 }

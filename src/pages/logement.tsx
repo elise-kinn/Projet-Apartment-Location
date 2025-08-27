@@ -2,9 +2,11 @@ import { useParams } from "react-router-dom";
 
 import ArticleInfo from "../components/repeat/articleInfo";
 import Collapse from "../components/repeat/collapse";
+import Equipment from "../components/repeat/equipment";
+import Carousel from '../components/unique/carousel';
+import ErrorComp from '../components/repeat/errorComp';
 
 import data from "../data/logements.json"
-import Equipment from "../components/repeat/equipment";
 
 type LogementProp = {
   id: string,
@@ -24,11 +26,14 @@ const Logement = () => {
 
     const logementData = logements.find(el => el.id === id);
 
-    if (!logementData) return <p>Logement introuvable</p>;
+    if (!logementData) return ( // si id introuvable 
+        <ErrorComp title="Logement introuvable :(" subtitle="Le logement que vous cherchez semble ne pas/plus exister."/>
 
-    return (
+    );
+
+    return ( //sinon
         <>
-            {/* <Carousel /> */}
+            <Carousel imgs={logementData.pictures}/>
 
             <section id="info">
                 <ArticleInfo

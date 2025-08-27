@@ -1,0 +1,14 @@
+#equipment{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    li{
+        margin-bottom : 9px;
+        display: flex;
+        align-items: center;
+        gap : 9px;
+        
+        svg{
+            color: rgb(101, 101, 245)
+        }
+    }
+}

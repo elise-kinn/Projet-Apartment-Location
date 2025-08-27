@@ -1,0 +1,33 @@
+#carousel{
+    position: relative;
+    padding-top: 18px;
+
+    .carousel-btn{
+        position: absolute;
+        top: 45%;
+        background-color: rgb(255 255 255 / 72%);
+        border : none;
+        border-radius : 50px;
+        padding : 15px;
+        display: flex;
+
+        &:hover{
+            transform: scale(1.15);
+        }
+    }
+
+    #carousel-prev{
+        left:26px
+    }
+
+    #carousel-next{
+        right:26px
+    }
+
+    
+    img{
+        height: 380px;
+        width: 100%;
+        object-fit: cover;
+    }
+}

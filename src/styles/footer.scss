@@ -28,7 +28,11 @@ footer{
             }
 
             a{
-                color :#D1D5DB
+                color :#D1D5DB;
+
+                &:hover{
+                    color : #d86b6b
+                }
             }
             
         }
