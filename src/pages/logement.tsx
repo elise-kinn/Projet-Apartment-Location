@@ -4,6 +4,7 @@ import ArticleInfo from "../components/repeat/articleInfo";
 import Collapse from "../components/repeat/collapse";
 
 import data from "../data/logements.json"
+import Equipment from "../components/repeat/equipment";
 
 type LogementProp = {
   id: string,
@@ -42,7 +43,7 @@ const Logement = () => {
             </section>
 
             <Collapse title="Description" children={logementData.description}/>
-            <Collapse title="Equipements" children={logementData.equipments}/>
+            <Collapse title="Equipements" children={<ul id="equipment">{logementData.equipments.map((el) => <Equipment text={el}/>)}</ul>}/>
 
         </>
     );
