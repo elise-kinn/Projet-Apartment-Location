@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom'
-import { CiLocationOn } from "react-icons/ci";
-import Tag from './tag';
 import Stars from './stars';
+import ArticleInfo from './articleInfo';
 
 type CardProp = {
     img: string, 
@@ -18,13 +17,7 @@ const Card = ({img, title, location, url, tags, rating}: CardProp) => {
             <article className='card-article'>
                 <img src={img} />
                 <div>
-                    <h2>{title}</h2>
-                    <p><CiLocationOn />{location}</p>
-                    <div className='tags-div'>
-                        {tags.map((el, i) => 
-                            <Tag text={el} key={i}/>
-                        )}
-                    </div>
+                    <ArticleInfo title={title} location={location} tags={tags}/>
                     <div className='rating-div'><Stars rating={parseInt(rating)}/><p>({rating})</p></div>
                 </div>
             </article>

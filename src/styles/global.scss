@@ -5,6 +5,9 @@
 @use './card.scss';
 @use './tag.scss';
 @use './stars.scss';
+@use './articleInfo.scss';
+@use './logementInfo.scss';
+@use './collapse.scss';
 
 *{
     margin: 0;
@@ -16,6 +19,13 @@
 
 header, footer>div, #hero>div{
     max-width: 1440px;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#info, #carousel, #host, .collapse{
+    max-width: 900px;
     margin: auto;
     padding-left: 15px;
     padding-right: 15px;

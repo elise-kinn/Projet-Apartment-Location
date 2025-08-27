@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom'
 
 import Home from './pages/home'
-import Details from './pages/logement'
+import Logement from './pages/logement'
 import Footer from './components/global/footer';
 import Header from "./components/global/header";
 
@@ -12,7 +12,7 @@ function App() {
 
     <Routes>
       <Route path='/' element={<Home/>} />
-      <Route path='/details' element={<Details/>} />
+      <Route path='/logement/:id' element={<Logement />} />
     </Routes>
 
     <Footer />

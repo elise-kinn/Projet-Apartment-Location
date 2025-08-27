@@ -1,0 +1,50 @@
+#info{
+    .article-info-div{
+        h2{
+            font-size: 30px;
+            margin-bottom: 8px
+        }
+
+        p{
+            margin-bottom : 15px;
+            font-size: 16px;
+            color : #4B5563
+        }
+
+        div{
+            margin-bottom : 8px
+        }
+
+        .rating-div{
+            margin-top : 19px
+        }
+
+        >svg{
+            margin-right : 8px
+        }
+
+        .span-tag{
+            padding: 9px 19px;
+            margin-right : 10px;
+            font-size: 14px;
+        }
+    }
+
+    #host{
+        display: flex;
+        margin-top : 38px;
+        margin-bottom : 25px;
+        align-items: center;
+        gap : 15px;
+
+        h2{
+            font-size: 16px;
+        }
+
+        img{
+            border-radius: 50px;
+            width: 64px;
+        }
+    }
+
+}
