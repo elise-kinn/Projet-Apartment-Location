@@ -31,3 +31,9 @@
         object-fit: cover;
     }
 }
+
+@media screen and (max-width: 620px){
+    #carousel img{
+        height: 240px;
+    }
+}

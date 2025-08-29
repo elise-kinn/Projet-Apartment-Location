@@ -10,9 +10,15 @@ header{
         font-size: 24px;
     }
 
-    nav ul{
-        display: flex;
-        gap : 34px;
+    nav {
+        #burger-button{
+            display: none;
+        }
+    
+        ul{
+            display: flex;
+            gap : 34px;
+        }
 
         a{
             color : #374151;
@@ -21,5 +27,35 @@ header{
                 color : #FF6B6B
             }
         }
+    }
+
+}
+
+@media screen and (max-width: 620px) {
+    #burger-button{
+        display: block !important;
+        background-color: #ffffff00;
+        border: none;
+
+        svg{
+            font-size: 20px;
+        }
+    }
+
+    nav ul{
+        display: none !important;
+    }
+
+    #burger-menu ul{
+        display: flex !important;
+        flex-direction: column;
+        gap: 16px;
+        background: white;
+        position: absolute;
+        top: 50px; /* ajuste selon la hauteur du header */
+        right: 10px;
+        padding: 26px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.15);
     }
 }
